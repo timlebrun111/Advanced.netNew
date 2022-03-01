@@ -1,0 +1,16 @@
+﻿@{ ViewData["title"] = "Cities";
+
+}
+
+<h1>@ViewData["title"]</h1>
+
+<p>Here is a list of my favorite Cities.</p>
+
+<ul>
+    @{ foreach (var cities in ViewBag.cities)
+        {
+            <li>@cities</li>
+        }
+
+    }
+</ul>

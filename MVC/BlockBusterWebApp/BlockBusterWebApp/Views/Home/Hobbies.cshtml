@@ -1,0 +1,17 @@
+﻿@{
+
+    ViewData["title"] = "Hobbies";
+}
+
+<h1>@ViewData["title"]</h1>
+
+<p>Here is a list of my hobbies.</p>
+
+<ul>
+    @{ foreach (var hobbies in ViewData["hobbies"] as List<string>)
+        {
+            <li>@hobbies</li>
+        }
+
+    }
+</ul>
